@@ -1,1 +1,7 @@
-new.html.erb
+<%= simple_form_for [@restaurants, @reviews] do |f| %>
+<%= f.input :content %>
+<%= f.input :rating %>
+<%= f.submit  %>
+<% end %>
+<%= link_to "Back Restaurant list", restaurants_path  %>
+
