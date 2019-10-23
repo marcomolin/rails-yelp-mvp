@@ -1,0 +1,10 @@
+
+<%= simple_form_for @restaurants_path do |r| %>
+
+<%= r.text_field :name, label: 'Restaurant name',error: 'Name is mandatory, please specify one' %>
+
+<%= r.text_field :address, error: 'Adress is mandatory, please specify one' %>
+<%= r.text_field :category,label: 'Categories: cinese, italian, japanese, french, belgian' ,error: 'Category is mandatory, please specify one' %>
+<%= r.text_field :phone_number %>
+<%= r.button :submit %>
+<% end %>
